@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00bcd4;
+    padding: 10px 20px;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+.navbar-left img {
+    height: 50px;
+}
+.navbar-left h1 {
+    margin: 0 0 0 10px;
+    color: white;
+    font-size: 24px;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+.btn-loja {
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-loja:hover {
+    background-color: #ffca28;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.cart img {
+    height: 20px;
+    margin-left: 10px;
+}
+.cart span {
+    margin-left: 5px;
+    font-size: 16px;
+}
+/* Estilos da seção de produtos */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.product {
+    width: 23%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.product .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.btn-compra {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.btn-compra:hover {
+    background-color: #0198a6;
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .product {
+        width: 45%;
+    }
+}
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #00bcd4;
+    color: white;
+    padding: 40px 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-content div {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer-content p,
+.footer-content ul {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin: 8px 0;
+}
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    font-size: 16px;
+}
+.newsletter button {
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.newsletter button:hover {
+    background-color: #ffca28;
+}
+.payment-icons img,
+.social-icons img {
+    width: 40px;
+    margin-right: 10px;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #008c9e;
+    color: white;
+    font-size: 14px;
+}
